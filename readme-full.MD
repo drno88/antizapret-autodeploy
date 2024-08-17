@@ -30,7 +30,8 @@ Antizapret работает следующим образом:
 6. Завершите создание сервера и получите IP-адрес вашего сервера.
 
 ### 2. Подключение к серверу по SSH
-1. Скачайте и установите [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+1. Скачайте и установите [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).  
+Очень подробное описание работы Putty доступно тут https://losst.pro/kak-polzovatsya-putty
 2. Откройте PuTTY.
 3. В поле "Host Name (or IP address)" введите IP-адрес вашего сервера.
 4. Убедитесь, что выбран протокол SSH и порт 22.
