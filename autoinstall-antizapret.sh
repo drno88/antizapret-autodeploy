@@ -9,7 +9,7 @@ done
 echo -e "\e[1;32mФонового процесса dpkg не найдено. Начинаю установку...\e[0m"
 
 # Получаем внешний IP-адрес
-external_ip=$(curl -s ifconfig.me)
+external_ip=$(curl -s https://ipinfo.io/ip)
 #Добавляем SWAP
 swapoff -a;
 fallocate -l 2G /swapfile;
