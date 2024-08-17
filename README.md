@@ -5,7 +5,7 @@
 
 <pre>
 <code>
-curl -o autoinstall-3x-ui.sh https://raw.githubusercontent.com/drno88/xray-docker/main/autoinstall-3x-ui.sh && bash autoinstall-3x-ui.sh
+curl -o autoinstall-/root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/autoinstall-antizapret.sh && bash autoinstall-antizapret.sh
 </code>
 </pre>
 
