@@ -40,6 +40,15 @@ lxc config device add antizapret-vpn proxy_44333 proxy listen=tcp:[::]:44333 con
 sleep 3
 lxc start antizapret-vpn
 sleep 10
+
+#Очистка
+lxc image delete antizapret-vpn-img;
+rm autoinstall-antizapret.sh;
+rm lxd-init.yaml;
+rm az-img.tar.gz;
+
 lxc list
+sleep 2
+
 echo -e "\e[1;32mУстановка завершена\e[0m"
 echo -e "\e[1;32mЗамените IP адрес в файле клиента на Ваш IP $external_ip\e[0m"
