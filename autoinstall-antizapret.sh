@@ -1,6 +1,10 @@
 #!/bin/bash
 
-dpkg-reconfigure -a;
+# Проверка, что установка пакетов не выполняется
+while sudo lsof /var/lib/dpkg/lock-frontend; do
+    echo "Установка пакетов в процессе. Пожалуйста, подождите..."
+    sleep 5
+done
 
 # Получаем внешний IP-адрес
 external_ip=$(curl -s ifconfig.me)
