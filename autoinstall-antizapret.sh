@@ -2,6 +2,13 @@
 
 # Получаем внешний IP-адрес
 external_ip=$(curl -s ifconfig.me)
+#Добавляем SWAP
+swapoff -a;
+fallocate -l 2G /swapfile;
+chmod 600 /swapfile;
+mkswap /swapfile;
+swapon /swapfile;
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 #Устанавливаем зависимости и софт
 apt-get update -qq && apt-get reinstall fail2ban mc htop vnstat wget git curl rsync apt-transport-https ca-certificates software-properties-common net-tools -qq -y;
