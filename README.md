@@ -18,3 +18,9 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 </code>
 </pre>
 
+После окончания установки запустите в консоли - 
+<pre>
+<code>
+lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
+</code>
+</pre>
