@@ -17,7 +17,7 @@
 6. Завершите создание сервера и получите IP-адрес вашего сервера.
 
 ### 2. Подключение к серверу по SSH
-1. Скачайте и установите PuTTY. https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.81-installer.msi
+1. Скачайте и установите [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 2. Откройте PuTTY.
 3. В поле "Host Name (or IP address)" введите IP-адрес вашего сервера.
 4. Убедитесь, что выбран протокол SSH и порт 22.
