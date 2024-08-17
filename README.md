@@ -18,7 +18,7 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 </code>
 </pre>
 
-После окончания установки запустите в консоли - 
+После окончания установки запустите в консоли - и дождитесь обновления списка заблокированных доменов
 <pre>
 <code>
 lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
