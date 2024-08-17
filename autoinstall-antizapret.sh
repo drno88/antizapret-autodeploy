@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dpkg-reconfigure -a
+
 # Получаем внешний IP-адрес
 external_ip=$(curl -s ifconfig.me)
 #Добавляем SWAP
