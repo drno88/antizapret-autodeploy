@@ -28,8 +28,8 @@ cat /root/lxd-init.yaml | /snap/bin/lxd init --preseed;
 
 #Установка Antizapret контейнера
 #загружаем архив
-wget -O /root/az-img.tar.gz https://s3.timeweb.cloud/42ff5a62-35bbf508-cbf8-483d-b6bc-275ae4e292bc/az-img.tar.gz --no-check-certificate --tries=0;
-wget -O /root/az-img.tar.gz https://s3.timeweb.cloud/42ff5a62-35bbf508-cbf8-483d-b6bc-275ae4e292bc/az-img.tar.gz --no-check-certificate --tries=0;
+wget -O /root/az-img.tar.gz https://s3.timeweb.cloud/42ff5a62-35bbf508-cbf8-483d-b6bc-275ae4e292bc/az-img.tar.gz --no-check-certificate --tries=0 --continue;
+wget -O /root/az-img.tar.gz https://s3.timeweb.cloud/42ff5a62-35bbf508-cbf8-483d-b6bc-275ae4e292bc/az-img.tar.gz --no-check-certificate --tries=0 --continue;
 #Распаковываем контейнер
 lxc image import /root/az-img.tar.gz --alias antizapret-vpn-img;
 lxc init antizapret-vpn-img antizapret-vpn;
