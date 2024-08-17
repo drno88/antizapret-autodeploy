@@ -8,7 +8,7 @@ apt-get update -qq && apt-get install fail2ban mc htop vnstat wget git curl rsyn
 #Устанавливаем snapd и LXD и настраиваем
 apt-get install snapd -qq -y;
 snap install lxd --channel=4.0/stable
-wget -O lxd-init.yaml https://raw.githubusercontent.com/drno88/my-autodepoy-xray/main/lxd.init;
+wget -O lxd-init.yaml https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/lxd.init;
 cat /root/lxd-init.yaml | /snap/bin/lxd init --preseed;
 
 #Установка Antizapret контейнера
