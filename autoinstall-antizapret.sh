@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dpkg-reconfigure -a
+dpkg-reconfigure -a;
 
 # Получаем внешний IP-адрес
 external_ip=$(curl -s ifconfig.me)
