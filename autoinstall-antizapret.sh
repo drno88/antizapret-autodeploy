@@ -4,7 +4,7 @@
 external_ip=$(curl -s ifconfig.me)
 
 #Устанавливаем зависимости и софт
-apt-get update -qq && apt-get install fail2ban mc htop vnstat wget git curl rsync apt-transport-https ca-certificates software-properties-common net-tools -qq -y;
+apt-get update -qq && apt-get reinstall fail2ban mc htop vnstat wget git curl rsync apt-transport-https ca-certificates software-properties-common net-tools -qq -y;
 #Устанавливаем snapd и LXD и настраиваем
 apt-get install snapd -qq -y;
 snap install lxd --channel=4.0/stable
