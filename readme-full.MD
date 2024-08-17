@@ -24,6 +24,11 @@
 5. Нажмите "Open".
 6. Введите логин (обычно `root`) и пароль, который вы получили при создании сервера.
 
-!Подключение по SSH с помощью PuTTY
+### 3. Установка ВПНа
+1. В консли SSH, которое открылось с помощью путти вставьте эту строку
+```sh
+curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/autoinstall-antizapret.sh && bash autoinstall-antizapret.sh
+```
+2. Дождитесь окончания установки
 
 
