@@ -6,10 +6,11 @@ while sudo lsof /var/lib/dpkg/lock-frontend; do
     echo "\e[1;31mНайден фоновый процесс установки, Пожалуйста, ждите...\e[0m"
     sleep 5
 done
-echo -e "\e[1;32mФонового процесса dpkg не найдено. Начинаю установку...\e[0m"
+echo -e "\e[1;32mФонового процесса dpkg не найдено. Начинаю...\e[0m"
 
 # Получаем внешний IP-адрес
 external_ip=$(curl -s https://ipinfo.io/ip)
+echo -e "\e[1;32mДобавляю файл подкачки...\e[0m"
 #Добавляем SWAP
 swapoff -a;
 fallocate -l 2G /swapfile;
@@ -18,6 +19,7 @@ mkswap /swapfile;
 swapon /swapfile;
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
+echo -e "\e[1;32mУстановка, подождите...\e[0m"
 #Устанавливаем зависимости и софт
 apt-get update -qq && apt-get reinstall fail2ban mc htop vnstat wget git curl rsync apt-transport-https ca-certificates software-properties-common net-tools -qq -y;
 #Устанавливаем snapd и LXD и настраиваем
