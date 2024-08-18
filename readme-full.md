@@ -48,6 +48,10 @@ Antizapret работает следующим образом:
 curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/autoinstall-antizapret.sh && bash autoinstall-antizapret.sh
 ```
 2. Дождитесь окончания установки
+3. Для получения файла конфигурации, скопируйте команду в консоль после завершения установки. Файл будет лежать на сервере в папке /root
+```sh
+lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn client-tcp.ovpn
+```
 
 ### 4. Получение файла OpenVPN
 
