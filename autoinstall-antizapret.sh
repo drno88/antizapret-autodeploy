@@ -50,7 +50,7 @@ rm az-img.tar.gz;
 
 lxc list
 sleep 2
-lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/client-tcp.ovpn
+lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/client-tcp.ovpn;
 sleep 2
 echo -e "\e[1;32mУстановка завершена\e[0m"
 echo -e "\e[1;32mЗамените IP адрес в файле клиента на Ваш IP $external_ip\e[0m"
