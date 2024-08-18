@@ -81,4 +81,4 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 3. **Подключитесь к VPN**:
    - В OpenVPN клиенте выберите импортированный профиль и нажмите "Connect".
 
-### 6. Настройка [Микротика](https://winscp.net/eng/download.php) или [Кинетика]([https://winscp.net/eng/download.php](https://github.com/drno88/antizapret-autodeploy/blob/main/readme-keenetic.md))
+### 6. Настройка [Микротика](https://winscp.net/eng/download.php) или [Кинетика](https://github.com/drno88/antizapret-autodeploy/blob/main/readme-keenetic.md)
