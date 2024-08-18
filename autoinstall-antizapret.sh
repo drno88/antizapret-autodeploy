@@ -35,8 +35,9 @@ lxc image import /root/az-img.tar.gz --alias antizapret-vpn-img;
 lxc init antizapret-vpn-img antizapret-vpn;
 sleep 3
 #Пробрасываем порты
-lxc config device add antizapret-vpn proxy_443 proxy listen=tcp:[::]:443 connect=tcp:127.0.0.1:1194;
+#lxc config device add antizapret-vpn proxy_443 proxy listen=tcp:[::]:443 connect=tcp:127.0.0.1:1194;
 lxc config device add antizapret-vpn proxy_44333 proxy listen=tcp:[::]:44333 connect=tcp:127.0.0.1:1194;
+lxc config device add antizapret-vpn proxy_udp_44333 proxy listen=udp:[::]:44333 connect=udp:127.0.0.1:1194;
 sleep 3
 lxc start antizapret-vpn
 sleep 10
@@ -49,6 +50,9 @@ rm az-img.tar.gz;
 
 lxc list
 sleep 2
+lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/client-tcp.ovpn
+sleep 2
+lxc restart antizapret-vpn;
 
 echo -e "\e[1;32mУстановка завершена\e[0m"
 echo -e "\e[1;32mЗамените IP адрес в файле клиента на Ваш IP $external_ip\e[0m"
