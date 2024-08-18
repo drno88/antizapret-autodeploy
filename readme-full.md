@@ -67,7 +67,7 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 
 Теперь у вас есть файл OpenVPN на вашем локальном компьютере, и вы можете использовать его для подключения к VPN.
 
-### 5. Подключение к OpenVPN серверу
+### 5. Подключение к OpenVPN серверу с ПК \ Android \ iOS
 
 1. **Скачайте и установите OpenVPN клиент** для вашей платформы:
    - [Windows](https://openvpn.net/client/client-connect-vpn-for-windows/) 
@@ -80,3 +80,5 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 
 3. **Подключитесь к VPN**:
    - В OpenVPN клиенте выберите импортированный профиль и нажмите "Connect".
+
+### 6. Подключение к OpenVPN серверу с помощью [Микротика](https://winscp.net/eng/download.php) или [Кинетика](https://winscp.net/eng/download.php)
