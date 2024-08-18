@@ -49,8 +49,6 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 ```
 2. Дождитесь окончания установки
 
-Конечно! Вот продолжение вашего README с подробным описанием получения файла OpenVPN с помощью WinSCP:
-
 ### 4. Получение файла OpenVPN
 
 1. Установите [WinSCP](https://winscp.net/eng/download.php) на ваш компьютер, если он еще не установлен.
