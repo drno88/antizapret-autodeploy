@@ -8,7 +8,7 @@
 - Внесены домены в файл с доменами для обязательного проксирования (добавлены Instagram, YouTube, Facebook и т.д.).
 
 ### Очень подробное описание процесса установки доступно тут  
-https://github.com/drno88/antizapret-autodeploy/blob/main/readme-full.MD
+[https://github.com/drno88/antizapret-autodeploy/blob/main/readme-full.MD](https://github.com/drno88/antizapret-autodeploy/blob/main/readme-full.md)
 
 ## Установка и запуск
 
