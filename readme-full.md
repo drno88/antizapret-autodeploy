@@ -44,6 +44,7 @@ Antizapret работает следующим образом:
 
 ### 3. Установка ВПНа
 1. Скопируйте строку ниже, вставьте в окно SSH(которое открылось) и нажмите Enter
+При любых всплывающих окнах просто нажимайте ENTER
 ```sh
 curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/autoinstall-antizapret.sh && bash autoinstall-antizapret.sh
 ```
