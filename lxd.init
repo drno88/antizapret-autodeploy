@@ -2,8 +2,8 @@ config:
   images.auto_update_interval: 0
 networks:
 - config:
-    ipv4.address: 10.209.231.1/24
-    ipv6.address: auto
+    ipv4.address: auto
+    ipv6.address: none
   description: ""
 #  managed: false
   name: lxdbr0
