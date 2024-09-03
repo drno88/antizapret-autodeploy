@@ -58,7 +58,7 @@ sleep 10
 sleep 5
 lxc list
 lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
-lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret.ovpn /root/antizapret-client-udp.ovpn;
+lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-udp.ovpn /root/antizapret-client-udp.ovpn;
 
 #Очистка
 lxc image delete antizapret-vpn-img;
