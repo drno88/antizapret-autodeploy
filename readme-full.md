@@ -57,7 +57,7 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 2. Дождитесь окончания установки
 3. Файл конфигурации для ОпенВПН клиента будет доступен в папке /root/client.ovpn
 4. **PS** - Добавление  \ Исключение собственных сайтов \ доменов
-   В консоли сервера вводим команду -
+   В консоли сервера вводим команду -  
    *Добавление доменов*
 ```sh
 lxc exec antizapret-vpn -- /bin/bash -c "mcedit /root/antizapret/config/include-hosts-custom.txt"
