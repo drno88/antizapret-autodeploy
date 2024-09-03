@@ -13,6 +13,7 @@ external_ip=$(curl -s https://ipinfo.io/ip)
 echo -e "\e[1;32mДобавляю файл подкачки...\e[0m"
 #Добавляем SWAP
 swapoff -a;
+rm /swapfile;
 fallocate -l 2G /swapfile;
 chmod 600 /swapfile;
 mkswap /swapfile;
