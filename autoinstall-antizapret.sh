@@ -54,9 +54,16 @@ rm az-img.tar.gz;
 
 lxc list
 sleep 2
-lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/client-tcp.ovpn;
+echo -e "\e[1;32mГенерируем секретные ключи для OpenVPN...\e[0m"
+sleep 2
+lxc exec antizapret-vpn -- /bin/bash -c "/root/easy-rsa-ipsec/generate.sh";
+sleep 1
+lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
 sleep 2
 lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh";
+lxc restart antizapret-vpn
+sleep 5
 
 echo -e "\e[1;32mУстановка завершена\e[0m"
+echo -e "\e[1;32mСкачайте файлы antizapret-client-tcp.ovpn и antizapret-client-udp.ovpn из папки root на сервере\e[0m"
 echo -e "\e[1;32mЗамените IP адрес в файле клиента на Ваш IP $external_ip\e[0m"
