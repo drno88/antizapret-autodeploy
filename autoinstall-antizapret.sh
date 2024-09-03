@@ -46,12 +46,6 @@ sleep 3
 lxc start antizapret-vpn
 sleep 10
 
-#Очистка
-lxc image delete antizapret-vpn-img;
-rm autoinstall-antizapret.sh;
-rm lxd-init.yaml;
-rm az-img.tar.gz;
-
 lxc list
 sleep 2
 echo -e "\e[1;32mГенерируем секретные ключи для OpenVPN...\e[0m"
@@ -65,6 +59,12 @@ sleep 10
 sleep 2
 lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
 lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret.ovpn /root/antizapret-client-udp.ovpn;
+
+#Очистка
+lxc image delete antizapret-vpn-img;
+rm autoinstall-antizapret.sh;
+rm lxd-init.yaml;
+rm az-img.tar.gz;
 
 echo -e "\e[1;32mУстановка завершена\e[0m"
 echo -e "\e[1;32mСкачайте файлы antizapret-client-tcp.ovpn и antizapret-client-udp.ovpn из папки root на сервере\e[0m"
