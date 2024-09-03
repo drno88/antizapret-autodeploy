@@ -56,7 +56,7 @@ lxc list
 sleep 2
 echo -e "\e[1;32mГенерируем секретные ключи для OpenVPN...\e[0m"
 sleep 2
-lxc exec antizapret-vpn -- /bin/bash -c "/root/easy-rsa-ipsec/generate.sh";
+lxc exec antizapret-vpn -- /bin/bash -c "echo "yes" | /root/easy-rsa-ipsec/generate.sh"
 sleep 1
 lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
 sleep 2
