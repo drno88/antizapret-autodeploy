@@ -66,7 +66,7 @@ lxc exec antizapret-vpn -- /bin/bash -c "mcedit /root/antizapret/config/include-
 ```sh
 lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
 ```
-   Чтобы исключить домены редактируем файл - 
+   *Чтобы исключить домены редактируем файл* - 
 ```sh
 lxc exec antizapret-vpn -- /bin/bash -c "mcedit /root/antizapret/config/exclude-hosts-custom.txt"
 ```
