@@ -56,7 +56,13 @@ curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88
 ```
 2. Дождитесь окончания установки
 3. Файл конфигурации для ОпенВПН клиента будет доступен в папке /root/client.ovpn
-
+4. **PS** - Добавление собственных сайтов \ доменов
+   В консоли сервера вводим команду - ```sh lxc exec antizapret-vpn -- /bin/bash -c "mcedit /root/antizapret/config/include-hosts-custom.txt" ```
+   откроется редактор MC - добавляем нужные домены в самый конец файла, нажимаем f10 - save
+   запускаем команду для обновления списка доменов
+```sh
+   lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
+```
 ### 4. Получение файла OpenVPN
 
 1. Установите [WinSCP](https://winscp.net/eng/download.php) на ваш компьютер, если он еще не установлен.
