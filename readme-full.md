@@ -64,7 +64,16 @@ lxc exec antizapret-vpn -- /bin/bash -c "mcedit /root/antizapret/config/include-
    откроется редактор MC - добавляем нужные домены в самый конец файла, нажимаем f10 - save
    запускаем команду для обновления списка доменов
 ```sh
-   lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
+lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
+```
+   Чтобы исключить домены редактируем файл - 
+```sh
+lxc exec antizapret-vpn -- /bin/bash -c "mcedit /root/antizapret/config/exclude-hosts-custom.txt"
+```
+   откроется редактор MC - добавляем нужные домены в самый конец файла, нажимаем f10 - save
+   запускаем команду для обновления списка доменов
+```sh
+lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh"
 ```
 ### 4. Получение файла OpenVPN
 
