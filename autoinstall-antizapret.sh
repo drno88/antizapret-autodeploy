@@ -60,9 +60,9 @@ lxc exec antizapret-vpn -- /bin/bash -c "/root/easy-rsa-ipsec/generate.sh";
 sleep 1
 lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
 sleep 2
-lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh";
 lxc restart antizapret-vpn
 sleep 5
+lxc exec antizapret-vpn -- /bin/bash -c "LANG=C.UTF-8 /root/antizapret/doall.sh";
 
 echo -e "\e[1;32mУстановка завершена\e[0m"
 echo -e "\e[1;32mСкачайте файлы antizapret-client-tcp.ovpn и antizapret-client-udp.ovpn из папки root на сервере\e[0m"
