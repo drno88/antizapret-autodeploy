@@ -59,10 +59,11 @@ sleep 5
 lxc list
 sleep 1
 echo -e "\e[1;32mКопирую файлы клиента для подключения\e[0m"
-lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
+lxc file pull --verbose antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-tcp.ovpn /root/antizapret-client-tcp.ovpn;
 echo -e "\e[1;32mantizapret-client-tcp.ovpn - DONE\e[0m"
-lxc file pull antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-udp.ovpn /root/antizapret-client-udp.ovpn;
+lxc file pull --verbose antizapret-vpn/root/easy-rsa-ipsec/CLIENT_KEY/antizapret-client-udp.ovpn /root/antizapret-client-udp.ovpn;
 echo -e "\e[1;32mantizapret-client-udp.ovpn - DONE\e[0m"
+
 #Очистка
 lxc image delete antizapret-vpn-img;
 rm autoinstall-antizapret.sh;
