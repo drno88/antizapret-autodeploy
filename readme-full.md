@@ -20,7 +20,7 @@ Antizapret - это проект, направленный на обход ре�
 
 # Оригинальный проект доступен по ссылке 
 <details>
-  <summary>**Disclaimer**</summary>
+  <summary>Ссылка</summary>
 https://bitbucket.org/anticensority/antizapret-vpn-container/src/master/
   </details>
 
