@@ -61,7 +61,7 @@ Antizapret работает следующим образом:
 1. Скопируйте строку ниже, вставьте в окно SSH(которое открылось) и нажмите Enter
 - При любых всплывающих окнах просто нажимайте ENTER
 ```sh
-curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/autoinstall-antizapret.sh && bash autoinstall-antizapret.sh
+curl -o /root/autoinstall-antizapret.sh https://raw.githubusercontent.com/drno88/antizapret-autodeploy/main/autoinstall-antizapret.sh && bash /root/autoinstall-antizapret.sh
 ```
 2. Дождитесь окончания установки
 3. Файл конфигурации для ОпенВПН клиента будет доступен в папке /root/client.ovpn
